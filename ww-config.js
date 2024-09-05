@@ -1,55 +1,17 @@
 export default {
   editor: {
     label: {
-      en: "My Element",
+      en: "Dialog",
     },
     icon: "view-grid",
   },
-  triggerEvents: [
-    {
-      name: "change",
-      label: { en: "On change" },
-      event: { value: "" },
-      default: true,
-    },
-  ],
   properties: {
-    default: {
-      label: {
-        en: "Default value",
-      },
-      type: "Text",
-      bindable: true,
-      defaultValue: "",
-    },
-    orientation: {
-      label: "Orientation",
-      type: "TextSelect",
-      options: {
-        options: [
-          { label: "Vertical", value: "vertical", default: true },
-          { label: "Horizontal", value: "horizontal" },
-        ],
-      },
-      bindable: true,
-      defaultValue: "horizontal",
-    },
-    controlled: {
-      label: "Manual control",
-      type: "OnOff",
-      bindable: true,
-      defaultValue: true,
-    },
-    modelValue: {
-      label: "Value",
-      type: "Text",
-      bindable: true,
-      defaultValue: "",
-      hidden: (content) => !content.controlled,
-    },
-    slot: {
+    stackElement: {
       hidden: true,
-      defaultValue: [],
+      defaultValue: {
+        isWwObject: true,
+        type: "5a88036f-22ea-4f8d-b4a5-bc226ef95061",
+      },
     },
   },
 };

@@ -9,7 +9,7 @@ export default {
     contentElement: {
       hidden: true,
       defaultValue: {
-        isWwObject: true,
+        isWwObject: false,
         type: "3049f8aa-e796-4a28-aafd-a282baab589e",
       },
     },

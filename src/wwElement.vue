@@ -1,5 +1,5 @@
 <template>
-  <wwElement v-bind="content.contentElement" />
+  <wwElement v-bind="this.content.contentElement" />
 </template>
 
 <script>

@@ -1,16 +1,16 @@
 export default {
   editor: {
     label: {
-      en: "Dialog",
+      en: "DialogRoot",
     },
     icon: "view-grid",
   },
   properties: {
-    stackElement: {
+    contentElement: {
       hidden: true,
       defaultValue: {
         isWwObject: true,
-        type: "5a88036f-22ea-4f8d-b4a5-bc226ef95061",
+        type: "3049f8aa-e796-4a28-aafd-a282baab589e",
       },
     },
   },

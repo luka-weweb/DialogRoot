@@ -1,3 +1,7 @@
+<template>
+  <wwElement v-bind="content.contentElement" />
+</template>
+
 <script>
 export default {
   props: {
@@ -5,18 +9,5 @@ export default {
     wwFrontState: { type: Object, required: true },
     wwEditorState: { type: Object, required: true },
   },
-  emits: ["trigger-event"],
-  data() {
-    return {
-      tabTriggers: [],
-      internalActiveTab: this.content.controlled
-        ? this.content.default
-        : this.content.modelValue,
-    };
-  },
 };
 </script>
-
-<template>
-  <wwElement />
-</template>

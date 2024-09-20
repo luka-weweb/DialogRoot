@@ -69,10 +69,10 @@ export default {
         const frontDocument = wwLib.getFrontDocument();
         const appEl = frontDocument.querySelector("body");
         if (appEl) {
-          appEl.style.pointerEvents = "none";
+          // appEl.style.pointerEvents = "none";
         }
       } else {
-        appEl.style.pointerEvents = "auto";
+        // appEl.style.pointerEvents = "auto";
       }
     },
   },
